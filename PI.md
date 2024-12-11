@@ -16,10 +16,17 @@ These instructions are intended for a PI such as a professor or biology research
 * Define volume to be segmented (e.g. microCT of frog)
   * Create a file named `master_volume` containing the URL of your volume to be segmented
   * Add a [Slicer color table](https://slicer.readthedocs.io/en/latest/developer_guide/modules/colors.html) in `.ctbl` format with the list of segments and colors
-* Create github issues for each subtask (e.g. frog legs, spine, head…)
-  * Describe what you want to have the segmenter do for this task
-  * Copy a link to the issue into an email to the segmenter asking them to add a comment to the issue discussion (github won't let you assign the issue to them unless they have indicated their interest in the issue).
-  * Assign issues to segmentors by their github user id so that they will appear on their TODO list when they use SlicerMorphoDepot
+* To assign tasks to your segmenters you have two options:
+  
+      1. You can create github issues for each subtask (e.g. frog legs, spine, head…)
+       * Describe what you want to have the segmenter do for this task
+       * Copy a link to the issue into an email to the segmenter asking them to add a comment to the issue discussion (github won't let you assign the issue to them unless they have indicated their interest in the issue).
+       * Assign issues to segmentors by their github user id so that they will appear on their TODO list when they use SlicerMorphoDepot
+
+      2. You can share the issues page URL in an email, along with a list of tasks for each of them
+       * They generate their own issues using a pre-agreed convention (e.g., Issue Title: FullName, then Issue Description is the descrption of the assigned task)
+       * You or the student created the issue can assign the issue.
+  
 * When notified of PRs ready for review, load them into Slicer's MorphoDepotReview module and review
   * Doubleclick PRs to review
   * Use review comments to provide feedback or request changes
